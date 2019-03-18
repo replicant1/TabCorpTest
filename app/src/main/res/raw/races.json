@@ -1,0 +1,1048 @@
+{
+  "races": [
+    {
+      "raceStartTime": "2018-05-28T01:41:00.000Z",
+      "raceNumber": 10,
+      "raceName": "NORTHFIELD PARK PACE MS",
+      "raceDistance": 1609,
+      "broadcastChannel": "Sky Racing 2",
+      "broadcastChannels": [
+        "Sky Racing 2"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "L",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "NORTHFIELD PARK",
+        "location": "USA",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "NFP",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/NFP/races/10?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/NFP/races/10/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/NFP/races/10/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T01:47:00.000Z",
+      "raceNumber": 11,
+      "raceName": "NORTHFIELD PARK PACE MS",
+      "raceDistance": 1609,
+      "broadcastChannel": "Sky Racing 2",
+      "broadcastChannels": [
+        "Sky Racing 2"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "L",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "NORTHFIELD PARK",
+        "location": "USA",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "NFP",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/NFP/races/11?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/NFP/races/11/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/NFP/races/11/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T01:47:00.000Z",
+      "raceNumber": 7,
+      "raceName": "ADRIAN CLARK-BLOODSTOCK C1",
+      "raceDistance": 457,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "Y",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "MANAWATU",
+        "location": "NZL",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "MWU",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/7?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/7/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/7/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T01:51:00.000Z",
+      "raceNumber": 5,
+      "raceName": "HAWTHORNE TROT MS",
+      "raceDistance": 1609,
+      "broadcastChannel": "Sky Racing 2",
+      "broadcastChannels": [
+        "Sky Racing 2"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "B",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "HAWTHORNE",
+        "location": "USA",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "HTH",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/5?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/5/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/5/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T01:57:00.000Z",
+      "raceNumber": 1,
+      "raceName": "SIRES ON ICE",
+      "raceDistance": 390,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "E",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "BALLARAT",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "BAL",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/1?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/1/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/1/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:05:00.000Z",
+      "raceNumber": 8,
+      "raceName": "STEVE THE AUCTIONEER DAVIS C1",
+      "raceDistance": 457,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "Y",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "MANAWATU",
+        "location": "NZL",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "MWU",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/8?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/8/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/8/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:10:00.000Z",
+      "raceNumber": 12,
+      "raceName": "NORTHFIELD PARK PACE MS",
+      "raceDistance": 1609,
+      "broadcastChannel": "Sky Racing 2",
+      "broadcastChannels": [
+        "Sky Racing 2"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "L",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "NORTHFIELD PARK",
+        "location": "USA",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "NFP",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/NFP/races/12?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/NFP/races/12/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/NFP/races/12/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:14:00.000Z",
+      "raceNumber": 2,
+      "raceName": "JA CATERING & FUNCTIONS",
+      "raceDistance": 450,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "E",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "BALLARAT",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "BAL",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/2?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/2/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/2/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:15:00.000Z",
+      "raceNumber": 6,
+      "raceName": "HAWTHORNE TROT MS",
+      "raceDistance": 1609,
+      "broadcastChannel": "Sky Racing 2",
+      "broadcastChannels": [
+        "Sky Racing 2"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "B",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "HAWTHORNE",
+        "location": "USA",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "HTH",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/6?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/6/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/6/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:22:00.000Z",
+      "raceNumber": 9,
+      "raceName": "OUTBACK TRADING COMPANY C2",
+      "raceDistance": 457,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "Y",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "MANAWATU",
+        "location": "NZL",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "MWU",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/9?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/9/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/9/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:34:00.000Z",
+      "raceNumber": 3,
+      "raceName": "A1 SIGNAGE",
+      "raceDistance": 450,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "E",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "BALLARAT",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "BAL",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/3?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/3/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/3/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:39:00.000Z",
+      "raceNumber": 7,
+      "raceName": "NIGHT OF CHAMPIONS SERIES TROT MS",
+      "raceDistance": 1609,
+      "broadcastChannel": "Sky Racing 2",
+      "broadcastChannels": [
+        "Sky Racing 2"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "B",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "HAWTHORNE",
+        "location": "USA",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "HTH",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/7?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/7/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/7/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:42:00.000Z",
+      "raceNumber": 10,
+      "raceName": "M&M MASTER BUTCHERS C2/3",
+      "raceDistance": 457,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "Y",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "MANAWATU",
+        "location": "NZL",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "MWU",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/10?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/10/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/10/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:45:00.000Z",
+      "raceNumber": 1,
+      "raceName": "FARMER LOU'S BENCHMARK 65 HANDICAP",
+      "raceDistance": 2400,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "S",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "GRAFTON",
+        "location": "NSW",
+        "weatherCondition": "FINE",
+        "trackCondition": "SOFT5",
+        "railPosition": "+2m from the WP to 1600m, +4.5m from 1200m to WP",
+        "venueMnemonic": "GRA",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/1?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/1/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/1/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:50:00.000Z",
+      "raceNumber": 4,
+      "raceName": "GAP 1-2 WINS",
+      "raceDistance": 450,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "E",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "BALLARAT",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "BAL",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/4?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/4/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/4/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:55:00.000Z",
+      "raceNumber": 1,
+      "raceName": "BET365 MAIDEN HIGHWEIGHT PLATE",
+      "raceDistance": 1600,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "M",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "HAMILTON",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "SOFT7",
+        "railPosition": "Out 5m 800m - 400m, Out 3m 1800m - 1400m, Out 5m Remainder",
+        "venueMnemonic": "HAM",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/1?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/1/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/1/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T02:59:00.000Z",
+      "raceNumber": 1,
+      "raceName": "DNR LOGISTICS 2YO PACE MS",
+      "raceDistance": 1700,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "M",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "HORSHAM",
+        "location": "VIC",
+        "weatherCondition": "FINE",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "HOR",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HOR/races/1?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HOR/races/1/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HOR/races/1/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:01:00.000Z",
+      "raceNumber": 11,
+      "raceName": "NORTH ISLAND CHALLENGE HEAT 1",
+      "raceDistance": 457,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "Y",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "MANAWATU",
+        "location": "NZL",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "MWU",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/11?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/11/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/11/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:03:00.000Z",
+      "raceNumber": 8,
+      "raceName": "HAWTHORNE PACE MS",
+      "raceDistance": 1609,
+      "broadcastChannel": "Sky Racing 2",
+      "broadcastChannels": [
+        "Sky Racing 2"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "B",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "HAWTHORNE",
+        "location": "USA",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "HTH",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/8?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/8/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/8/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:05:00.000Z",
+      "raceNumber": 1,
+      "raceName": "WESTERN STAR HOTEL CG&E MAIDEN",
+      "raceDistance": 1110,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "C",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "DUBBO",
+        "location": "NSW",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD4",
+        "railPosition": "+3m from 900m to 400m where cutaway applies. + 1m remainder.",
+        "venueMnemonic": "DBO",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/1?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/1/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/1/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:09:00.000Z",
+      "raceNumber": 5,
+      "raceName": "JUST COPIERS 1-2 WINS",
+      "raceDistance": 545,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "E",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "BALLARAT",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "BAL",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/5?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/5/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/5/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:12:00.000Z",
+      "raceNumber": 1,
+      "raceName": "MAITLAND MERCURY PACE MS",
+      "raceDistance": 1646,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "S",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "MAITLAND",
+        "location": "NSW",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "MTL",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/MTL/races/1?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/MTL/races/1/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/MTL/races/1/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:17:00.000Z",
+      "raceNumber": 12,
+      "raceName": "NORTH ISLAND CHALLENGE HEAT 2",
+      "raceDistance": 457,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "Y",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "MANAWATU",
+        "location": "NZL",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "MWU",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/12?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/12/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/MWU/races/12/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:20:00.000Z",
+      "raceNumber": 2,
+      "raceName": "KEV'S CLEANING GUINEAS PRELUDE",
+      "raceDistance": 1420,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "S",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "GRAFTON",
+        "location": "NSW",
+        "weatherCondition": "FINE",
+        "trackCondition": "SOFT5",
+        "railPosition": "+2m from the WP to 1600m, +4.5m from 1200m to WP",
+        "venueMnemonic": "GRA",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/2?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/2/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/2/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:25:00.000Z",
+      "raceNumber": 6,
+      "raceName": "BOTTLE-O",
+      "raceDistance": 450,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "E",
+          "scheduledType": "G"
+        },
+        "raceType": "G",
+        "meetingName": "BALLARAT",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "BAL",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/6?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/6/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/G/BAL/races/6/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:27:00.000Z",
+      "raceNumber": 9,
+      "raceName": "HAWTHORNE F&M PACE MS",
+      "raceDistance": 1609,
+      "broadcastChannel": "Sky Racing 2",
+      "broadcastChannels": [
+        "Sky Racing 2"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "B",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "HAWTHORNE",
+        "location": "USA",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "HTH",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/9?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/9/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HTH/races/9/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:30:00.000Z",
+      "raceNumber": 2,
+      "raceName": "BET365 BM58 HIGHWEIGHT HANDICAP",
+      "raceDistance": 2200,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "M",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "HAMILTON",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "SOFT7",
+        "railPosition": "Out 5m 800m - 400m, Out 3m 1800m - 1400m, Out 5m Remainder",
+        "venueMnemonic": "HAM",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/2?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/2/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/2/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:34:00.000Z",
+      "raceNumber": 2,
+      "raceName": "PEGASUS SPUR @ WOODLANDS STUD SS",
+      "raceDistance": 2200,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "M",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "HORSHAM",
+        "location": "VIC",
+        "weatherCondition": "FINE",
+        "trackCondition": "GOOD",
+        "railPosition": null,
+        "venueMnemonic": "HOR",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HOR/races/2?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HOR/races/2/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/HOR/races/2/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:40:00.000Z",
+      "raceNumber": 2,
+      "raceName": "ADORS PARTY HIRE F&M MAIDEN PLATE",
+      "raceDistance": 1110,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "C",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "DUBBO",
+        "location": "NSW",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD4",
+        "railPosition": "+3m from 900m to 400m where cutaway applies. + 1m remainder.",
+        "venueMnemonic": "DBO",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/2?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/2/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/2/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:49:00.000Z",
+      "raceNumber": 2,
+      "raceName": "THE WINDSOR CASTLE HOTEL PACE MS",
+      "raceDistance": 1646,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "S",
+          "scheduledType": "H"
+        },
+        "raceType": "H",
+        "meetingName": "MAITLAND",
+        "location": "NSW",
+        "weatherCondition": "FINE",
+        "trackCondition": "FAST",
+        "railPosition": null,
+        "venueMnemonic": "MTL",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/MTL/races/2?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/MTL/races/2/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/H/MTL/races/2/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T03:55:00.000Z",
+      "raceNumber": 3,
+      "raceName": "IN MEMORY OF WARWICK HALL F&M",
+      "raceDistance": 1115,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "S",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "GRAFTON",
+        "location": "NSW",
+        "weatherCondition": "FINE",
+        "trackCondition": "SOFT5",
+        "railPosition": "+2m from the WP to 1600m, +4.5m from 1200m to WP",
+        "venueMnemonic": "GRA",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/3?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/3/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/3/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T04:00:00.000Z",
+      "raceNumber": 3,
+      "raceName": "ALEXANDRA HOUSE SPORTS CLUB 2YO",
+      "raceDistance": 1200,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "M",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "HAMILTON",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "SOFT7",
+        "railPosition": "Out 5m 800m - 400m, Out 3m 1800m - 1400m, Out 5m Remainder",
+        "venueMnemonic": "HAM",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/3?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/3/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/3/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T04:15:00.000Z",
+      "raceNumber": 3,
+      "raceName": "STEVE WALLACE MEMORIAL CLASS 1",
+      "raceDistance": 1110,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "C",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "DUBBO",
+        "location": "NSW",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD4",
+        "railPosition": "+3m from 900m to 400m where cutaway applies. + 1m remainder.",
+        "venueMnemonic": "DBO",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/3?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/3/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/3/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T04:30:00.000Z",
+      "raceNumber": 4,
+      "raceName": "SCHURMANN ELECTRICAL MAIDEN PLATE",
+      "raceDistance": 1200,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "M",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "HAMILTON",
+        "location": "VIC",
+        "weatherCondition": "SHWRY",
+        "trackCondition": "SOFT7",
+        "railPosition": "Out 5m 800m - 400m, Out 3m 1800m - 1400m, Out 5m Remainder",
+        "venueMnemonic": "HAM",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/4?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/4/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/HAM/races/4/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T04:35:00.000Z",
+      "raceNumber": 4,
+      "raceName": "CANSDELL SIGNS CG&E MAIDEN",
+      "raceDistance": 1115,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "S",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "GRAFTON",
+        "location": "NSW",
+        "weatherCondition": "FINE",
+        "trackCondition": "SOFT5",
+        "railPosition": "+2m from the WP to 1600m, +4.5m from 1200m to WP",
+        "venueMnemonic": "GRA",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/4?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/4/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/GRA/races/4/big-bets?jurisdiction=NSW"
+      }
+    },
+    {
+      "raceStartTime": "2018-05-28T04:50:00.000Z",
+      "raceNumber": 4,
+      "raceName": "PAUL MCANENEY MEMORIAL MAIDEN",
+      "raceDistance": 1310,
+      "broadcastChannel": "Sky Racing 1",
+      "broadcastChannels": [
+        "Sky Racing 1"
+      ],
+      "meeting": {
+        "sellCode": {
+          "meetingCode": "C",
+          "scheduledType": "R"
+        },
+        "raceType": "R",
+        "meetingName": "DUBBO",
+        "location": "NSW",
+        "weatherCondition": "OCAST",
+        "trackCondition": "GOOD4",
+        "railPosition": "+3m from 900m to 400m where cutaway applies. + 1m remainder.",
+        "venueMnemonic": "DBO",
+        "meetingDate": "2018-05-28"
+      },
+      "_links": {
+        "self": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/4?jurisdiction=NSW",
+        "form": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/4/form?jurisdiction=NSW",
+        "bigBets": "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2018-05-28/meetings/R/DBO/races/4/big-bets?jurisdiction=NSW"
+      }
+    }
+  ]
+}
