@@ -17,7 +17,10 @@ import tab.com.au.codetest.data.Races;
 public class MainActivity extends AppCompatActivity implements IMainActivityView {
 
 	private static final String LOG_TAG = MainActivity.class.getSimpleName();
+
+	// This could be injected
 	private final IMainActivityPresenter presenter = new MainActivityPresenter();
+
 	private RaceListAdapter adapter;
 
 	@ViewById(R.id.srl_race_list_swipe_refresh_layout)
@@ -25,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements IMainActivityView
 
 	@ViewById(R.id.rv_race_list)
 	RecyclerView recyclerView;
-
 
 	@Override
 	public void hideProgress() {

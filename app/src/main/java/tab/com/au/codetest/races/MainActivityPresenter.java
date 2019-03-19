@@ -9,6 +9,10 @@ import tab.com.au.codetest.R;
 import tab.com.au.codetest.data.Races;
 import tab.com.au.codetest.usecase.GetRacesUseCase;
 
+/**
+ * Presents a list of races of various types.
+ * @see MainActivity
+ */
 public class MainActivityPresenter implements IMainActivityPresenter {
 
 	private static final String LOG_TAG = MainActivityPresenter.class.getSimpleName();
