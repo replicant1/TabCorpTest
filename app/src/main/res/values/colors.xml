@@ -10,4 +10,8 @@
     <color name="colorListDivider">#eee</color>
     <color name="colorCellBackground">#fff</color>
     <color name="colorMissingElement">#eee</color>
+
+    <color name="colorRaceTimeSoon">#f40</color>
+    <color name="colorRaceTimeNotSoon">#aaa</color>
+    <color name="colorRaceIconTint">#999</color>
 </resources>

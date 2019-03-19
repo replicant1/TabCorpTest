@@ -1,5 +1,6 @@
 package tab.com.au.codetest;
 
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -8,8 +9,6 @@ import android.widget.TextView;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
-
-import java.util.StringTokenizer;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -38,7 +37,7 @@ public class RaceListItemViewHolder extends RecyclerView.ViewHolder {
 		// Title = "Race Name (race number)"
 		String formattedTitle = raceNameTextView.getContext().getString(R.string.race_name_number,
 				race.getRaceName(), race.getNumber());
-		raceNameTextView.setText(capitalize(formattedTitle));
+		raceNameTextView.setText(RaceUtils.capitalize(formattedTitle));
 
 		// Race time like "7:08 AM"
 		DateTime startDateTime = DateTime.parse(race.getRaceStartTime().toString());
@@ -46,7 +45,18 @@ public class RaceListItemViewHolder extends RecyclerView.ViewHolder {
 		String str = formatter.print(startDateTime);
 		raceTimeTextView.setText(str);
 
-		// Icon = race type
+		int raceTimeColor = 0;
+
+		// Race starts inside an hour from now = red text. Otherwise grey text.
+		if (RaceUtils.isWithinAnHour(DateTime.now().toLocalDateTime(), startDateTime.toLocalDateTime())) {
+			raceTimeColor = ContextCompat.getColor(raceTimeTextView.getContext(), R.color.colorRaceTimeSoon);
+		} else {
+			raceTimeColor = ContextCompat.getColor(raceTimeTextView.getContext(), R.color.colorRaceTimeNotSoon);
+		}
+
+		raceTimeTextView.setTextColor(raceTimeColor);
+
+		// Icon indicates race type
 		switch (race.getMeeting().getRaceType()) {
 			case HARNESS:
 				raceImageView.setImageResource(R.mipmap.ic_harness);
@@ -61,25 +71,8 @@ public class RaceListItemViewHolder extends RecyclerView.ViewHolder {
 				break;
 
 			case UNKNOWN:
+				raceImageView.setImageResource(0);
 				break;
 		}
-	}
-
-	private String capitalize(String str) {
-		StringTokenizer tokenizer = new StringTokenizer(str, " ");
-		StringBuffer result = new StringBuffer();
-
-		while (tokenizer.hasMoreTokens()) {
-			result.append(firstLetterToUpperCase(tokenizer.nextToken()));
-			result.append(" ");
-		}
-
-		return result.toString().trim();
-	}
-
-	private String firstLetterToUpperCase(String word) {
-		Character firstLetterUpperCase = Character.toUpperCase(word.charAt(0));
-		String remainderLowerCase = word.subSequence(1, word.length()).toString().toLowerCase();
-		return firstLetterUpperCase + remainderLowerCase;
 	}
 }

@@ -16,7 +16,7 @@
         android:layout_height="@dimen/asset_list_thumbnail_image_height"
         android:layout_marginRight="@dimen/asset_list_margin_major"
         android:scaleType="centerCrop"
-        android:background="@color/colorMissingElement"
+        android:tint="@color/colorRaceIconTint"
         tools:src="@mipmap/ic_greyhound"/>
 
     <!-- Bold headline at top of list item -->
