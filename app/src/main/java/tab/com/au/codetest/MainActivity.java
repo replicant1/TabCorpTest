@@ -1,30 +1,34 @@
 package tab.com.au.codetest;
 
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import java.util.List;
-
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
-import tab.com.au.codetest.data.Race;
 import tab.com.au.codetest.data.Races;
-import tab.com.au.codetest.usecase.GetRacesUseCase;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements IMainActivityView {
 
-//	@ViewById(R.id.rv_news_asset_list)
+	private static final String LOG_TAG = MainActivity.class.getSimpleName();
+	private final IMainActivityPresenter presenter = new MainActivityPresenter();
+	private RaceListAdapter adapter;
+	private RecyclerView recyclerView;
+	private SwipeRefreshLayout swipeRefreshLayout;
+
+	//	@ViewById(R.id.rv_news_asset_list)
 //	lateinit var recyclerView: RecyclerView
 //
 //	@ViewById(R.id.srl_news_asset_list_swipe_refresh_layout)
 //	lateinit var swipeRefreshLayout: SwipeRefreshLayout
 
-	private RecyclerView recyclerView;
 
-	private static final String LOG_TAG = MainActivity.class.getSimpleName();
+
+	@Override
+	public void hideProgress() {
+		swipeRefreshLayout.setRefreshing(false);
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,44 +38,49 @@ public class MainActivity extends AppCompatActivity {
 		recyclerView = (RecyclerView) findViewById(R.id.rv_race_list);
 		recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-		GetRacesUseCase usecase = new GetRacesUseCase();
-		usecase.execute(new Observer<Races>() {
-			@Override
-			public void onSubscribe(Disposable d) {
-				Log.d(LOG_TAG, "onSubscribe - log");
-			}
-
-			@Override
-			public void onNext(Races races) {
-				Log.d(LOG_TAG, "*******************");
-				Log.d(LOG_TAG, "onNext. races=" + races);
-				if (races != null) {
-					List<Race> raceList = races.getRaces();
-					if (raceList != null) {
-						for (int i = 0; i < raceList.size(); i++) {
-							Race race = raceList.get(i);
-							Log.d(LOG_TAG, "Meeting=" + race.getMeeting() + ", race name=" + race.getRaceName()
-									+ ",race number= " + race.getNumber() + ",start time=" + race.getRaceStartTime());
-						}
-					}
-				}
-				Log.d(LOG_TAG, "******************** Setting adapter ********");
-
-				RaceListAdapter adapter = new RaceListAdapter(races);
-				Log.d(LOG_TAG, "Race count in adapter =" + adapter.getItemCount());
-				recyclerView.setAdapter(adapter);
-			}
-
-			@Override
-			public void onError(Throwable e) {
-				Log.e(LOG_TAG, "onError: e=" + e);
-			}
-
-			@Override
-			public void onComplete() {
-				Log.d(LOG_TAG, "onComplete");
-			}
-		});
+		swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.srl_race_list_swipe_refresh_layout);
+		swipeRefreshLayout.setOnRefreshListener(new SwipeListener());
 	}
 
+	@Override
+	protected void onPause() {
+		Log.d(LOG_TAG, "Into onPause() with presenter = " + presenter);
+		super.onPause();
+		presenter.onDetachView();
+	}
+
+	protected void onResume() {
+		Log.d(LOG_TAG, "Into onResume() with presenter=" + presenter);
+		super.onResume();
+		presenter.onAttachView(this, null);
+
+		// The very first time this activity appears, automatically kick off a load of the race data
+		if (adapter == null) {
+			presenter.loadRaces();
+		}
+	}
+
+	@Override
+	public void refresh(Races races) {
+		adapter = new RaceListAdapter(races);
+		Log.d(LOG_TAG, "Race count in adapter =" + adapter.getItemCount());
+		recyclerView.setAdapter(adapter);
+	}
+
+	@Override
+	public void showError(int errorMessageId) {
+		// TODO: Show modal error dialog.
+	}
+
+	@Override
+	public void showProgress(int progressMessageId) {
+		swipeRefreshLayout.setRefreshing(true);
+	}
+
+	private class SwipeListener implements SwipeRefreshLayout.OnRefreshListener {
+		@Override
+		public void onRefresh() {
+			presenter.loadRaces();
+		}
+	}
 }
