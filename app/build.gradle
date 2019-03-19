@@ -61,6 +61,7 @@ dependencies {
     }
     api 'joda-time:joda-time:2.9.9'
     api 'org.apache.commons:commons-lang3:3.7'
+
     api 'com.google.http-client:google-http-client:1.23.0'
     api ('com.damnhandy:handy-uri-templates:2.1.6') {
         exclude group: 'joda-time', module: 'joda-time'

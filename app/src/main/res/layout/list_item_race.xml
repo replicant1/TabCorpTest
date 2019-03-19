@@ -29,6 +29,7 @@
         android:layout_alignTop="@id/iv_race_thumbnail"
         android:layout_toRightOf="@id/iv_race_thumbnail"
         android:maxLines="2"
+        android:ellipsize="middle"
         tools:text="AUSTRALIAN GOLD CHALLENGE FOR OLD DOGS (3)"/>
 
     <!-- Less distinct byline (author name) is underneath headline, left aligned -->
