@@ -1,5 +1,6 @@
-package tab.com.au.codetest;
+package tab.com.au.codetest.races;
 
+import android.content.Context;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -12,6 +13,8 @@ import org.joda.time.format.DateTimeFormatter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import tab.com.au.codetest.R;
+import tab.com.au.codetest.RaceUtils;
 import tab.com.au.codetest.data.Race;
 
 /**
@@ -48,10 +51,13 @@ public class RaceListItemViewHolder extends RecyclerView.ViewHolder {
 		int raceTimeColor = 0;
 
 		// Race starts inside an hour from now = red text. Otherwise grey text.
-		if (RaceUtils.isWithinAnHourBefore(DateTime.now().toLocalDateTime(), startDateTime.toLocalDateTime())) {
-			raceTimeColor = ContextCompat.getColor(raceTimeTextView.getContext(), R.color.colorRaceTimeSoon);
+		if (RaceUtils.isWithinAnHourBefore(DateTime.now().toLocalDateTime(),
+				startDateTime.toLocalDateTime())) {
+			raceTimeColor = ContextCompat.getColor(raceTimeTextView.getContext(),
+					R.color.colorRaceTimeSoon);
 		} else {
-			raceTimeColor = ContextCompat.getColor(raceTimeTextView.getContext(), R.color.colorRaceTimeNotSoon);
+			raceTimeColor = ContextCompat.getColor(raceTimeTextView.getContext(),
+					R.color.colorRaceTimeNotSoon);
 		}
 
 		raceTimeTextView.setTextColor(raceTimeColor);

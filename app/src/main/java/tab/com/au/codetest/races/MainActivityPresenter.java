@@ -1,10 +1,11 @@
-package tab.com.au.codetest;
+package tab.com.au.codetest.races;
 
 
 import android.util.Log;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
+import tab.com.au.codetest.R;
 import tab.com.au.codetest.data.Races;
 import tab.com.au.codetest.usecase.GetRacesUseCase;
 

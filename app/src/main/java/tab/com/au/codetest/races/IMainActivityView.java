@@ -1,4 +1,4 @@
-package tab.com.au.codetest;
+package tab.com.au.codetest.races;
 
 import tab.com.au.codetest.data.Races;
 import tab.com.au.codetest.mvp.IView;
