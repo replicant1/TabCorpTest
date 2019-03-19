@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import tab.com.au.codetest.data.Race;
 
 /**
@@ -16,17 +18,30 @@ public class RaceListItemViewHolder extends RecyclerView.ViewHolder {
 
 	private static final String LOG_TAG = RaceListItemViewHolder.class.getSimpleName();
 
+	@BindView(R.id.tv_race_name)
+	TextView raceNameTextView;
+
+	@BindView(R.id.tv_race_time)
+	TextView raceTimeTextView;
+
+	@BindView(R.id.iv_race_thumbnail)
+	ImageView raceImageView;
+
 	public RaceListItemViewHolder(View itemView) {
 		super(itemView);
+		ButterKnife.bind(this,itemView);
 	}
 
 	public void bind(Race race) {
 		Log.d(LOG_TAG, "bind: race=" + race);
-		TextView raceNameTextView = itemView.findViewById(R.id.tv_race_name);
-		TextView raceTimeTextView = itemView.findViewById(R.id.tv_race_time);
-		ImageView raceImageView = itemView.findViewById(R.id.iv_race_thumbnail);
+//		raceNameTextView = itemView.findViewById(R.id.tv_race_name);
+//		 raceTimeTextView = itemView.findViewById(R.id.tv_race_time);
+//		ImageView raceImageView = itemView.findViewById(R.id.iv_race_thumbnail);
 
+		// TODO: Get from formatted string
 		raceNameTextView.setText(race.getRaceName() + " (" + race.getNumber() + ")");
+
+		// TODO: Ignore date, show time in am.pm, change font color per current time.
 		raceTimeTextView.setText(race.getRaceStartTime().toString());
 		switch (race.getMeeting().getRaceType()) {
 			case HARNESS:
