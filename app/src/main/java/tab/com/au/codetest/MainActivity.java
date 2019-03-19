@@ -2,6 +2,8 @@ package tab.com.au.codetest;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import java.util.List;
@@ -14,12 +16,23 @@ import tab.com.au.codetest.usecase.GetRacesUseCase;
 
 public class MainActivity extends AppCompatActivity {
 
+//	@ViewById(R.id.rv_news_asset_list)
+//	lateinit var recyclerView: RecyclerView
+//
+//	@ViewById(R.id.srl_news_asset_list_swipe_refresh_layout)
+//	lateinit var swipeRefreshLayout: SwipeRefreshLayout
+
+	private RecyclerView recyclerView;
+
 	private static final String LOG_TAG = MainActivity.class.getSimpleName();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		recyclerView = (RecyclerView) findViewById(R.id.rv_race_list);
+		recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 		GetRacesUseCase usecase = new GetRacesUseCase();
 		usecase.execute(new Observer<Races>() {
@@ -42,7 +55,11 @@ public class MainActivity extends AppCompatActivity {
 						}
 					}
 				}
-				Log.d(LOG_TAG, "********************");
+				Log.d(LOG_TAG, "******************** Setting adapter ********");
+
+				RaceListAdapter adapter = new RaceListAdapter(races);
+				Log.d(LOG_TAG, "Race count in adapter =" + adapter.getItemCount());
+				recyclerView.setAdapter(adapter);
 			}
 
 			@Override

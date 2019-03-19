@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/asset_list_margin_major">
+
+    <!-- Thumbnail image at left of list item -->
+
+    <ImageView
+        android:id="@+id/iv_race_thumbnail"
+        android:layout_width="@dimen/asset_list_thumbnail_image_width"
+        android:layout_height="@dimen/asset_list_thumbnail_image_height"
+        android:layout_marginRight="@dimen/asset_list_margin_major"
+        android:scaleType="centerCrop"
+        android:background="@color/colorMissingElement"
+        tools:src="@mipmap/ic_greyhound"/>
+
+    <!-- Bold headline at top of list item -->
+
+    <TextView
+        android:id="@+id/tv_race_name"
+        style="@style/NewsAssetListItem.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_race_thumbnail"
+        android:layout_toRightOf="@id/iv_race_thumbnail"
+        android:maxLines="2"
+        tools:text="AUSTRALIAN GOLD CHALLENGE FOR OLD DOGS (3)"/>
+
+    <!-- Less distinct byline (author name) is underneath headline, left aligned -->
+
+    <TextView
+        android:id="@+id/tv_race_time"
+        style="@style/NewsAssetListItem.Byline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_race_name"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/iv_race_thumbnail"
+        android:maxLines="1"
+        tools:text="3:05 pm"/>
+
+    <!-- Bulk of the abstract (synopsis) text is at bottom of list item -->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_news_asset_abstract"-->
+        <!--style="@style/NewsAssetListItem.Abstract"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/iv_news_asset_thumbnail"-->
+        <!--android:layout_marginBottom="@dimen/asset_list_margin_minor"-->
+        <!--android:layout_marginTop="@dimen/asset_list_margin_major"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--tools:text="`Twas brillig, and the slithy toves did gyre and gimble in the wabe: All mimsy were the borogoves, And the mome raths outgrabe.\n&quot;Beware the Jabberwock, my son! The jaws that bite, the claws that catch! Beware the Jubjub bird, and shun The frumious Bandersnatch!&quot;"/>-->
+
+</RelativeLayout>
