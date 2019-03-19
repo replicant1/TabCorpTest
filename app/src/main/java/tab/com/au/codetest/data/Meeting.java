@@ -37,4 +37,14 @@ public class Meeting implements Serializable {
     public String getWeatherCondition() {
         return weatherCondition;
     }
+
+    @Override
+    public String toString() {
+        StringBuffer buf = new StringBuffer();
+        buf.append("name=" + name);
+        buf.append(",type=" + raceType);
+        buf.append(",location=" + location);
+        buf.append(",weather=" + weatherCondition);
+        return buf.toString();
+    }
 }

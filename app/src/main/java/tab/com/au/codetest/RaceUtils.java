@@ -50,10 +50,11 @@ public class RaceUtils {
 	/**
 	 * @param earlierLocal Previous time
 	 * @param laterLocal   Later time
-	 * @return True if the earlierLocal time is within an hour before laterLocal
+	 * @return True if the earlierLocal time is within an hour before laterLocal. False if more than an
+	 * hour before or if earlierLocal is after laterLocal.
 	 */
 	public static boolean isWithinAnHourBefore(LocalDateTime earlierLocal, LocalDateTime laterLocal) {
 		Seconds between = Seconds.secondsBetween(earlierLocal, laterLocal);
-		return (between.getSeconds() <= SECONDS_PER_HOUR);
+		return (between.getSeconds() <= SECONDS_PER_HOUR) && (between.getSeconds() >= 0);
 	}
 }

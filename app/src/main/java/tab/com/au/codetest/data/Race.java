@@ -10,7 +10,6 @@ import java.io.Serializable;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Race implements Serializable {
 
-
     @JsonProperty("raceNumber")
     protected int number;
 
@@ -36,5 +35,15 @@ public class Race implements Serializable {
 
     public DateTime getRaceStartTime() {
         return raceStartTime;
+    }
+
+    @Override
+    public String toString() {
+        StringBuffer buf =new StringBuffer();
+        buf.append("(number=" + number);
+        buf.append(",name=" + raceName);
+        buf.append(",start=" + raceStartTime);
+        buf.append(",meeting=" + meeting + ")");
+        return buf.toString();
     }
 }

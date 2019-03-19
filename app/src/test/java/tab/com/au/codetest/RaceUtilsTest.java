@@ -121,7 +121,7 @@ public class RaceUtilsTest {
     public void ten01AMIsNotWithinAnHourOfTenAM() {
         LocalDateTime ten_01_am = DateTime.now().toLocalDateTime().withTime(10, 1, 0, 0);
         LocalDateTime ten_am = DateTime.now().toLocalDateTime().withTime(10, 0, 0, 0);
-        assertTrue(RaceUtils.isWithinAnHourBefore(ten_01_am, ten_am));
+        assertFalse(RaceUtils.isWithinAnHourBefore(ten_01_am, ten_am));
     }
 
     @Test
@@ -129,5 +129,12 @@ public class RaceUtilsTest {
         LocalDateTime eleven_30_am = DateTime.now().toLocalDateTime().withTime(11, 30, 0, 0);
         LocalDateTime twelve_15_pm = DateTime.now().toLocalDateTime().withTime(12, 15, 0, 0);
         assertTrue(RaceUtils.isWithinAnHourBefore(eleven_30_am, twelve_15_pm));
+    }
+
+    @Test
+    public void eleven25pmIsNotWithinAnHourOfTwelve25AM() {
+        LocalDateTime eleven_25_pm = DateTime.now().toLocalDateTime().withTime(23, 25, 0, 0);
+        LocalDateTime twelve_25_am = DateTime.now().toLocalDateTime().withTime(12, 25, 0, 0);
+        assertFalse(RaceUtils.isWithinAnHourBefore(eleven_25_pm, twelve_25_am));
     }
 }

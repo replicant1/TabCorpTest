@@ -1,5 +1,7 @@
 package tab.com.au.codetest.data;
 
+import android.util.Log;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -14,5 +16,14 @@ public class Races implements Serializable {
 
     public List<Race> getRaces() {
         return races;
+    }
+
+    @Override
+    public String toString() {
+        StringBuffer buf = new StringBuffer();
+        for (int i = 0; i < races.size(); i++) {
+            buf.append(races.get(i) + "\n");
+        }
+        return buf.toString();
     }
 }

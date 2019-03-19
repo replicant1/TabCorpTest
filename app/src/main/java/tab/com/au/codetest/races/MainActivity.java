@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements IMainActivityView
 //	lateinit var swipeRefreshLayout: SwipeRefreshLayout
 
 
-
 	@Override
 	public void hideProgress() {
 		swipeRefreshLayout.setRefreshing(false);
@@ -36,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements IMainActivityView
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		// TODO: Use annotations to get these id's
 		recyclerView = (RecyclerView) findViewById(R.id.rv_race_list);
 		recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

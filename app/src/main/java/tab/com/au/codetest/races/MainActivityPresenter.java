@@ -54,6 +54,8 @@ public class MainActivityPresenter implements IMainActivityPresenter {
 			Log.d(LOG_TAG, "onNext: races=" + races);
 			view.hideProgress();
 			view.refresh(races);
+			Log.d(LOG_TAG, "---- races -----");
+			Log.d(LOG_TAG, races.toString());
 		}
 
 		@Override
