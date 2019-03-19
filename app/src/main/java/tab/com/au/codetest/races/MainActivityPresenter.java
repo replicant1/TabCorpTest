@@ -27,7 +27,7 @@ public class MainActivityPresenter implements IMainActivityPresenter {
 	}
 
 	@Override
-	public void onAttachView(IMainActivityView view, Object initData) {
+	public void onAttachView(IMainActivityView view) {
 		this.view = view;
 	}
 

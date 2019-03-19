@@ -6,9 +6,8 @@ public interface IPresenter<V extends IView> {
 	 * Call this from then end of your views' onResume() or onCreateView() method.
 	 *
 	 * @param view     The IView to be presented by this IPresenter
-	 * @param initData Initialization data the presenter needs to properly present the IView
 	 */
-	public void onAttachView(V view, Object initData);
+	public void onAttachView(V view);
 
 	/**
 	 * Call this from your views' onPause() or onDestroy() method. This will terminate

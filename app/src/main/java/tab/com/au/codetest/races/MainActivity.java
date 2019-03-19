@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements IMainActivityView
 	protected void onResume() {
 		Log.d(LOG_TAG, "Into onResume() with presenter=" + presenter);
 		super.onResume();
-		presenter.onAttachView(this, null);
+		presenter.onAttachView(this);
 
 		// The very first time this activity appears, automatically kick off a load of the race data
 		if (adapter == null) {
