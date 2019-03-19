@@ -4,13 +4,12 @@ import tab.com.au.codetest.data.Races;
 import tab.com.au.codetest.mvp.IView;
 
 /**
- * Created by rodbailey on 19/3/19.
+ * A view onto a list of races of various types
  */
-
 public interface IMainActivityView extends IView {
 
 	/**
 	 * Refresh the view from the data provided
 	 */
-	public void refresh(Races listData);
+	public void refresh(Races races);
 }

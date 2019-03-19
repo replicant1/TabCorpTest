@@ -1,28 +1,30 @@
 package tab.com.au.codetest.races;
 
-import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
+
 import tab.com.au.codetest.R;
 import tab.com.au.codetest.data.Races;
 
+@EActivity(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity implements IMainActivityView {
 
 	private static final String LOG_TAG = MainActivity.class.getSimpleName();
 	private final IMainActivityPresenter presenter = new MainActivityPresenter();
 	private RaceListAdapter adapter;
-	private RecyclerView recyclerView;
-	private SwipeRefreshLayout swipeRefreshLayout;
 
-	//	@ViewById(R.id.rv_news_asset_list)
-//	lateinit var recyclerView: RecyclerView
-//
-//	@ViewById(R.id.srl_news_asset_list_swipe_refresh_layout)
-//	lateinit var swipeRefreshLayout: SwipeRefreshLayout
+	@ViewById(R.id.srl_race_list_swipe_refresh_layout)
+	SwipeRefreshLayout swipeRefreshLayout;
+
+	@ViewById(R.id.rv_race_list)
+	RecyclerView recyclerView;
 
 
 	@Override
@@ -30,16 +32,9 @@ public class MainActivity extends AppCompatActivity implements IMainActivityView
 		swipeRefreshLayout.setRefreshing(false);
 	}
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-
-		// TODO: Use annotations to get these id's
-		recyclerView = (RecyclerView) findViewById(R.id.rv_race_list);
+	@AfterViews
+	void afterViews() {
 		recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-		swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.srl_race_list_swipe_refresh_layout);
 		swipeRefreshLayout.setOnRefreshListener(new SwipeListener());
 	}
 
