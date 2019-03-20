@@ -1,5 +1,10 @@
 package tab.com.au.codetest.mvp;
 
+/**
+ * Identifies a Presenter in the "Model-View-Presenter" sense.
+ *
+ * @param <V> The type of view being presented.
+ */
 public interface IPresenter<V extends IView> {
 
 	/**

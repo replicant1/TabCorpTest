@@ -51,6 +51,8 @@ public class RaceListItemViewHolder extends RecyclerView.ViewHolder {
 		int raceTimeColor = 0;
 
 		// Race starts inside an hour from now = red text. Otherwise grey text.
+		// Note we ignore time zone information as it seems all race start times come
+		// back from the server with time zone "Z".
 		if (RaceUtils.isWithinAnHourBefore(DateTime.now().toLocalDateTime(),
 				startDateTime.toLocalDateTime())) {
 			raceTimeColor = ContextCompat.getColor(raceTimeTextView.getContext(),

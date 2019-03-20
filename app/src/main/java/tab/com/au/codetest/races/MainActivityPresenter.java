@@ -19,11 +19,23 @@ public class MainActivityPresenter implements IMainActivityPresenter {
 
 	private IMainActivityView view;
 
+	/**
+	 * Local cache of most recently loaded races. Made static so it survives device
+	 * orientation changes. Would be better implemented using ViewModel from Android
+	 * Architectural Components because it is lifecycle-aware (this would avoid all the
+	 * "if (view != null)" checks in the RacesObserver class below.
+	 */
+	private static Races racesCache;
+
 	@Override
-	public void loadRaces() {
-		Log.d(LOG_TAG, "About to load races");
-		GetRacesUseCase usecase = new GetRacesUseCase();
-		usecase.execute(new RacesObserver());
+	public void loadRaces(boolean okToLoadFromCache) {
+		Log.d(LOG_TAG, "About to load races from presenter, with okToLoadFromCache=" + okToLoadFromCache);
+		if (okToLoadFromCache && racesCache != null) {
+			new RacesObserver().onNext(racesCache);
+		} else {
+			GetRacesUseCase usecase = new GetRacesUseCase();
+			usecase.execute(new RacesObserver());
+		}
 	}
 
 	@Override
@@ -36,6 +48,9 @@ public class MainActivityPresenter implements IMainActivityPresenter {
 		view = null;
 	}
 
+	/**
+	 * Listens for completion or failure of remote retrieval of race data from server
+	 */
 	private class RacesObserver implements Observer<Races> {
 
 		private String LOG_TAG = RacesObserver.class.getSimpleName();
@@ -43,21 +58,28 @@ public class MainActivityPresenter implements IMainActivityPresenter {
 		@Override
 		public void onComplete() {
 			Log.d(LOG_TAG, "onComplete");
-			view.hideProgress();
+			if (view != null) {
+				view.hideProgress();
+			}
 		}
 
 		@Override
 		public void onError(Throwable e) {
 			Log.e(LOG_TAG, "onError: " + e);
-			view.hideProgress();
-			view.showError(R.string.races_error_msg);
+			if (view != null) {
+				view.hideProgress();
+				view.showError(R.string.races_error_msg);
+			}
 		}
 
 		@Override
 		public void onNext(Races races) {
 			Log.d(LOG_TAG, "onNext: races=" + races);
-			view.hideProgress();
-			view.refresh(races);
+			racesCache = races;
+			if (view != null) {
+				view.hideProgress();
+				view.refresh(races);
+			}
 			Log.d(LOG_TAG, "---- races -----");
 			Log.d(LOG_TAG, races.toString());
 		}
@@ -65,7 +87,9 @@ public class MainActivityPresenter implements IMainActivityPresenter {
 		@Override
 		public void onSubscribe(Disposable d) {
 			Log.d(LOG_TAG, "onSubscribe");
-			view.showProgress(R.string.races_load_msg);
+			if (view != null) {
+				view.showProgress(R.string.races_load_msg);
+			}
 		}
 	}
 }
