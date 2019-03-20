@@ -6,6 +6,7 @@
 * `MVP` architecture - see interfaces `IView` and `IPresenter`
 * Supports device orientation changes
 * Uses libraries: Android Annotations, ButterKnife
+* UI employs a `RecyclerView` to display list of races
 
 The original problem statement is [here](/doc/original_README.md)
 
