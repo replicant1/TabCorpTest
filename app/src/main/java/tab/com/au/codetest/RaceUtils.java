@@ -1,5 +1,7 @@
 package tab.com.au.codetest;
 
+import android.util.Log;
+
 import org.joda.time.LocalDateTime;
 import org.joda.time.Seconds;
 
@@ -9,6 +11,7 @@ public class RaceUtils {
 
 	public static final int SECONDS_PER_HOUR = 60 * 60;
 	public static final String SPACE_CHAR = " ";
+	private static final String LOG_TAG = RaceUtils.class.getSimpleName();
 
 	/**
 	 * @param str String to convert to camel case
@@ -55,6 +58,9 @@ public class RaceUtils {
 	 */
 	public static boolean isWithinAnHourBefore(LocalDateTime earlierLocal, LocalDateTime laterLocal) {
 		Seconds between = Seconds.secondsBetween(earlierLocal, laterLocal);
-		return (between.getSeconds() <= SECONDS_PER_HOUR) && (between.getSeconds() >= 0);
+		boolean result = (between.getSeconds() <= SECONDS_PER_HOUR) && (between.getSeconds() >= 0);
+		Log.d(LOG_TAG, "earlierLocal=" + earlierLocal + ", laterLocal=" + laterLocal + ", between=" + between + ", " +
+				"result=" + result);
+		return result;
 	}
 }

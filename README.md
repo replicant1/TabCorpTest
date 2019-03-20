@@ -23,3 +23,7 @@ The goal is to have a a working version.
 Do not try to gold-plate it, but **do** use this exercise to demonstrate your skills in Android.
 
 We are impressed by SW design and engineering principles and practices: design-patterns, clean+readable code, choice of frameworks, tests etc.
+
+![Portrait](/doc/tab_corp_screenshot_portrait.png)
+
+![Landscape](/doc/tab_corp_screenshot_landscape.png)

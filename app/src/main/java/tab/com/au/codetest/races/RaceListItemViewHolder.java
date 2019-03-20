@@ -3,6 +3,7 @@ package tab.com.au.codetest.races;
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +22,8 @@ import tab.com.au.codetest.data.Race;
  * View holder for a single list item in the Race list.
  */
 public class RaceListItemViewHolder extends RecyclerView.ViewHolder {
+
+	private static final String LOG_TAG = RaceListItemViewHolder.class.getSimpleName();
 
 	@BindView(R.id.tv_race_name)
 	TextView raceNameTextView;
@@ -53,6 +56,10 @@ public class RaceListItemViewHolder extends RecyclerView.ViewHolder {
 		// Race starts inside an hour from now = red text. Otherwise grey text.
 		// Note we ignore time zone information as it seems all race start times come
 		// back from the server with time zone "Z".
+		Log.d(LOG_TAG, "Datetime.now()=" + DateTime.now() + ", Datetime.now().toLocalDateTime()=" +
+				DateTime.now().toLocalDateTime());
+		Log.d(LOG_TAG, "startDateTime=" + startDateTime + ", startDatetime.toLocalDateTime()=" + startDateTime
+				.toLocalDateTime());
 		if (RaceUtils.isWithinAnHourBefore(DateTime.now().toLocalDateTime(),
 				startDateTime.toLocalDateTime())) {
 			raceTimeColor = ContextCompat.getColor(raceTimeTextView.getContext(),
