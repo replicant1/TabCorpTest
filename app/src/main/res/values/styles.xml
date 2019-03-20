@@ -8,25 +8,25 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="NewsAssetListItem">
+    <style name="RaceListItem">
 
     </style>
 
-    <style name="NewsAssetListItem.Headline">
+    <style name="RaceListItem.Headline">
         <item name="android:textColor">@color/colorTextHeadline</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">14sp</item>
         <item name="android:ellipsize">end</item>
     </style>
 
-    <style name="NewsAssetListItem.Byline">
+    <style name="RaceListItem.Byline">
         <item name="android:textColor">@color/colorTextByline</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">14sp</item>
         <item name="android:ellipsize">end</item>
     </style>
 
-    <style name="NewsAssetListItem.Abstract">
+    <style name="RaceListItem.Abstract">
         <item name="android:textColor">@color/colorTextAbstract</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">12sp</item>

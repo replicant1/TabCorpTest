@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_race_list_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?android:selectableItemBackground"
@@ -23,7 +24,7 @@
 
     <TextView
         android:id="@+id/tv_race_name"
-        style="@style/NewsAssetListItem.Headline"
+        style="@style/RaceListItem.Headline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/iv_race_thumbnail"
@@ -36,7 +37,7 @@
 
     <TextView
         android:id="@+id/tv_race_time"
-        style="@style/NewsAssetListItem.Byline"
+        style="@style/RaceListItem.Byline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_race_name"
@@ -44,18 +45,5 @@
         android:layout_toRightOf="@id/iv_race_thumbnail"
         android:maxLines="1"
         tools:text="3:05 pm"/>
-
-    <!-- Bulk of the abstract (synopsis) text is at bottom of list item -->
-
-    <!--<TextView-->
-        <!--android:id="@+id/tv_news_asset_abstract"-->
-        <!--style="@style/NewsAssetListItem.Abstract"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@id/iv_news_asset_thumbnail"-->
-        <!--android:layout_marginBottom="@dimen/asset_list_margin_minor"-->
-        <!--android:layout_marginTop="@dimen/asset_list_margin_major"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--tools:text="`Twas brillig, and the slithy toves did gyre and gimble in the wabe: All mimsy were the borogoves, And the mome raths outgrabe.\n&quot;Beware the Jabberwock, my son! The jaws that bite, the claws that catch! Beware the Jubjub bird, and shun The frumious Bandersnatch!&quot;"/>-->
 
 </RelativeLayout>
