@@ -7,7 +7,9 @@
 * Supports device orientation changes
 * Uses libraries: Android Annotations, ButterKnife
 
+The original problem statement is [here](/doc/original_README.md)
 
+ 
 ## Screenshots
 
 ### Portrait Orientation
